@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	background-color: #131313;
+}
+
+.navbar-gradient {
+	background-image: linear-gradient(
+			283deg,
+			rgba(228, 228, 228, 0.04) 0%,
+			rgba(228, 228, 228, 0.04) 30%,
+			rgba(130, 130, 130, 0.04) 30%,
+			rgba(130, 130, 130, 0.04) 49%,
+			rgba(31, 31, 31, 0.04) 49%,
+			rgba(31, 31, 31, 0.04) 100%
+		),
+		linear-gradient(
+			297deg,
+			rgba(228, 228, 228, 0.04) 0%,
+			rgba(228, 228, 228, 0.04) 20%,
+			rgba(130, 130, 130, 0.04) 20%,
+			rgba(130, 130, 130, 0.04) 60%,
+			rgba(31, 31, 31, 0.04) 60%,
+			rgba(31, 31, 31, 0.04) 100%
+		),
+		linear-gradient(
+			242deg,
+			rgba(228, 228, 228, 0.04) 0%,
+			rgba(228, 228, 228, 0.04) 29%,
+			rgba(130, 130, 130, 0.04) 29%,
+			rgba(130, 130, 130, 0.04) 48%,
+			rgba(31, 31, 31, 0.04) 48%,
+			rgba(31, 31, 31, 0.04) 100%
+		),
+		linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+}
+
+.text-gradient {
+	background: linear-gradient(to right, #1a6dff, #5865ff, #8258ff, #a646ff, #c822ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.nav-link {
+	@apply flex items-center gap-3 text-white font-SS3 text-base font-semibold lg:text-lg;
+}
+
+.nav-link:hover {
+	background: linear-gradient(to right, #1a6dff, #5865ff, #8258ff, #a646ff, #c822ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.active {
+	background: linear-gradient(to right, #1a6dff, #5865ff, #8258ff, #a646ff, #c822ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.bg-gradient {
+	background: linear-gradient(to right, #1a6dff, #5865ff, #8258ff, #a646ff, #c822ff);
+}
+
+.nav-icon {
+	@apply w-5 h-5 lg:w-6 lg:h-6;
+}
+
+.stats-title {
+	@apply text-gray-400 font-Mont text-lg mb-1 xxl:text-xl;
+}
+
+.stats-value {
+	@apply text-white font-SS3 text-base tracking-wider xxl:text-lg;
+}
+
+.show-more {
+	@apply text-white font-Mont text-base pt-2 hover:underline underline-offset-4 xxl:pt-4;
+}
+
+.card-content {
+	@apply text-white font-SS3 text-base font-normal;
+}
+
+.market-details {
+	@apply flex flex-col w-full justify-between md:border-b-2 md:flex-row;
+}
+
+.percentage-title {
+	@apply text-gray-400 font-Mont text-lg py-2 md:py-3 xxl:text-xl;
+}
+
+.percentage-details {
+	@apply w-full border-[#1b1b1b];
+}
+
+.percentage-change {
+	@apply font-SS3 text-base tracking-wider py-2 md:py-3 xxl:text-lg;
+}
+
+.statistics {
+	@apply flex flex-col w-full justify-between lg:flex-row;
+}
